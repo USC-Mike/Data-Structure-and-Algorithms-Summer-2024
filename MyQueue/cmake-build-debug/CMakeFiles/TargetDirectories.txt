@@ -1,0 +1,3 @@
+/Users/kurt-mike-pino/CLionProjects/MyQueue/cmake-build-debug/CMakeFiles/MyQueue.dir
+/Users/kurt-mike-pino/CLionProjects/MyQueue/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/kurt-mike-pino/CLionProjects/MyQueue/cmake-build-debug/CMakeFiles/rebuild_cache.dir
