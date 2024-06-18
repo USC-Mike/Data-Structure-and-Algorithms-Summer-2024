@@ -61,6 +61,12 @@ build CMakeFiles/MyQueue.dir/QueueLinkedList.c.o: C_COMPILER__MyQueue_unscanned_
   OBJECT_DIR = CMakeFiles/MyQueue.dir
   OBJECT_FILE_DIR = CMakeFiles/MyQueue.dir
 
+build CMakeFiles/MyQueue.dir/QueueArray.c.o: C_COMPILER__MyQueue_unscanned_Debug /Users/kurt-mike-pino/CLionProjects/MyQueue/QueueArray.c || cmake_object_order_depends_target_MyQueue
+  DEP_FILE = CMakeFiles/MyQueue.dir/QueueArray.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/MyQueue.dir
+  OBJECT_FILE_DIR = CMakeFiles/MyQueue.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target MyQueue
@@ -69,7 +75,7 @@ build CMakeFiles/MyQueue.dir/QueueLinkedList.c.o: C_COMPILER__MyQueue_unscanned_
 #############################################
 # Link the executable MyQueue
 
-build MyQueue: C_EXECUTABLE_LINKER__MyQueue_Debug CMakeFiles/MyQueue.dir/main.c.o CMakeFiles/MyQueue.dir/QueueLinkedList.c.o
+build MyQueue: C_EXECUTABLE_LINKER__MyQueue_Debug CMakeFiles/MyQueue.dir/main.c.o CMakeFiles/MyQueue.dir/QueueLinkedList.c.o CMakeFiles/MyQueue.dir/QueueArray.c.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
   OBJECT_DIR = CMakeFiles/MyQueue.dir
   POST_BUILD = :

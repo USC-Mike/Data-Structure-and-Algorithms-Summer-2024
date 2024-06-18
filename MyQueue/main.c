@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "QueueLinkedList.h"
+#include "QueueArray.h"
 
 int main(void) {
     //printf("Hello, World!\n");
@@ -19,5 +20,21 @@ int main(void) {
 
     printf("\nFront => %d\n", front(QL));
 
+    CircularQ QA;
+    initCircularArrayQueue(&QA);
+
+    info data[] = {{"Yevgeny", 1, 1 } ,
+                   {"Daryl", 2, 2},
+                   {"Mike", 3, 3}};
+
+    enqueueCircularArray(&QA, data[0]);
+    enqueueCircularArray(&QA, data[1]);
+
+    displayCircularArrayQueue(QA);
+
+    dequeueCircularArray(&QA);
+    enqueueCircularArray(&QA, data[2]);
+
+    displayCircularArrayQueue(QA);
     return 0;
 }

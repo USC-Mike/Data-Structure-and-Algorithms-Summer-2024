@@ -5,4 +5,6 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(MyQueue main.c
         QueueLinkedList.c
-        QueueLinkedList.h)
+        QueueLinkedList.h
+        QueueArray.c
+        QueueArray.h)
