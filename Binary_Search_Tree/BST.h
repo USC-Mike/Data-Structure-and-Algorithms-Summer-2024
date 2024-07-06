@@ -24,10 +24,27 @@ typedef struct node{
     struct node *Left, *Right;
 }NodeType, *NodePtr;
 
-void initializeBinarySearchTree(NodePtr *BST);
-void populateProducts_to_BST(NodePtr *BST, Product Prod);
-void insertProducts_to_BST(NodePtr *BST, Product Prod);
-void displayBST(NodePtr BST);
+typedef struct queueNode {
+    NodePtr treeNode;
+    struct queueNode *next;
+}QueueNode, *QueueNodePtr;
 
+typedef struct {
+    QueueNodePtr front;
+    QueueNodePtr rear;
+}QueueLList;
+
+void initializeQueue(QueueLList *Q);
+void enqueue(QueueLList *Q, NodePtr treeNode);
+NodePtr dequeue(QueueLList *Q);
+void BFS_traversal(NodePtr BST);
+
+void initializeBinarySearchTree(NodePtr *BST);
+void insertProducts_to_BST(NodePtr *BST, Product Prod);
+void deleteProducts_from_BST(NodePtr *BST, char *name);
+
+void displayPreOrder(NodePtr BST);
+void displayInOrder(NodePtr BST);
+void displayPostOrder(NodePtr BST);
 
 #endif //BINARY_SEARCH_TREE_BST_H
