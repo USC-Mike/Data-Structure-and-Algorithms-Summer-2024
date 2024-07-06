@@ -50,6 +50,7 @@ typedef struct {
 
 void initializeDictClosed(ClosedDic *D);
 void insert_Dict(ClosedDic *D, Studtype *P);
+void delete_Dict(ClosedDic *D, Studtype P);
 int hashValue(char *value);
 bool isMember(ClosedDic D, Studtype *value);
 void display_Dict(ClosedDic D);

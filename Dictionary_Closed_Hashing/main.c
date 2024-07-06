@@ -14,5 +14,9 @@ int main(void) {
     insert_Dict(&D, &B);
 
     display_Dict(D);
+
+    delete_Dict(&D, B);
+
+    display_Dict(D);
     return 0;
 }

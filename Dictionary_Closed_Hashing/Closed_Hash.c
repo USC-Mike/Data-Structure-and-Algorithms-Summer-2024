@@ -27,6 +27,17 @@ void insert_Dict(ClosedDic *D, Studtype *P) {
     }
 }
 
+void delete_Dict(ClosedDic *D, Studtype P) {
+
+    int index = hashValue(P.ID);
+    if (D->HTable[index].stat != EMPTY && strcmp(D->HTable[index].stud.ID, P.ID) == 0) {
+        D->HTable[index].stat = DELETED;
+        D->elemCtr--;
+    } else {
+        printf("Error: Entry not found\n");
+    }
+}
+
 int hashValue(char *value){
     unsigned long hash = 5381;
     int c;
